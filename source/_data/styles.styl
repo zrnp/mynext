@@ -11,19 +11,28 @@ body {
 //文章内容的透明度设置
 .content-wrap {
   opacity: 0.85;
+  z-index: 1;
 }
 
 //侧边框的透明度设置
 .sidebar {
   opacity: 0.85;
+  z-index: 1;
 }
 //菜单栏的透明度设置
 .header-inner {
   opacity: 0.85;
+  z-index: 4000;
 }
-//搜索框（local-search）的透明度设置
-.popup {
-  opacity: 0.85;
+.search-pop-overlay.search-active {
+opacity: 1;
+position:fixed;
+z-index: 5000;
+}
+.popup{
+z-index: 5500;
+position:fixed;
+opacity:1;
 }
 .byline {
     display: block;
@@ -57,7 +66,17 @@ h2{text-align:center;}
 }
 .site-author-name
 {    font-family: "Times New Roman","华文新魏","华文楷体",serif;
+font-size: 120%;
 }
 .site-author-image {
 content:url(../uploads/Sephiroth.gif);
+}
+.posts-collapse
+{
+font-size: 1.2em;
+font-weight: bold;}
+.back-to-top.back-to-top-on {
+  background-color: #333;
+  color: #fff;
+  border: inset medium #fff;
 }
